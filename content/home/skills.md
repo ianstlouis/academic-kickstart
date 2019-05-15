@@ -15,21 +15,21 @@ subtitle = ""
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 
 [[feature]]
-  icon = "code"
-  icon_pack = "fa"
-  name = "MATLAB"
-  description = "95%"
+  icon = "r-project"
+  icon_pack = "fab"
+  name = "R"
+  description = "90%"
   
 [[feature]]
-  icon = "ruler-combined"
-  icon_pack = "fa"
-  name = "SolidWorks"
-  description = "90%"  
+  icon = "chart-line"
+  icon_pack = "fas"
+  name = "Statistics"
+  description = "100%"  
   
 [[feature]]
-  icon = "project-diagram"
-  icon_pack = "fa"
-  name = "LabVIEW"
-  description = "80%"
+  icon = "camera-retro"
+  icon_pack = "fas"
+  name = "Photography"
+  description = "10%"
 
 +++
