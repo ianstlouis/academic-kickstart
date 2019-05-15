@@ -19,33 +19,23 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
-  organization = "Coursera"
-  organization_url = "https://www.coursera.org"
-  title = "Neural Networks and Deep Learning"
+  organization = "National Instruments"
+  organization_url = "http://www.ni.com/en-us/shop/labview.html"
+  title = "Certified LabVIEW Associate Developer"
   url = ""
-  certificate_url = "https://www.coursera.org"
-  date_start = "2018-10-01"
+  certificate_url = "https://www.youracclaim.com/badges/25f3cd82-1432-4208-8bf5-560b81ca4ef5/linked_in_profile"
+  date_start = "2018-04-24"
   date_end = ""
-  description = ""
+  description = "Certified LabVIEW Associate Developers (CLAD) demonstrate familiarity with the LabVIEW programming environment and basic programming concepts like data acquisition and manipulation. CLADs possess a working knowledge of the LabVIEW environment, a basic understanding of coding and documentation best practices, and the ability to read and interpret existing code."
 
 [[item]]
-  organization = "edX"
-  organization_url = "https://www.edx.org"
-  title = "Blockchain Fundamentals"
-  url = "https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals"
-  certificate_url = "https://www.edx.org"
+  organization = "University of California, Berkeley"
+  organization_url = "https://www.berkeley.edu"
+  title = "WaterSEER Design Competition"
+  url = ""
+  certificate_url = "https://scet.berkeley.edu/waterseer-collider-winners-announced/"
   date_start = "2018-03-01"
   date_end = ""
-  description = "Formulated informed blockchain models, hypotheses, and use cases."
+  description = "Developed the winning design in a $12k design competition."
   
-[[item]]
-  organization = "DataCamp"
-  organization_url = "https://www.datacamp.com"
-  title = "Object-Oriented Programming in R: S3 and R6 Course"
-  url = ""
-  certificate_url = "https://www.datacamp.com"
-  date_start = "2017-07-01"
-  date_end = "2017-12-21"
-  description = ""
-
 +++
