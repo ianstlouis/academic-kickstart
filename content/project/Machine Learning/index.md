@@ -22,5 +22,4 @@ categories = []
   
 +++
 # Text
-## Text
-### Text of the project
+summary.html

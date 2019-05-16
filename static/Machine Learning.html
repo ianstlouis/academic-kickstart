@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://www.ianstlouis.com/machinelearning -->
+<html lang="en" site-body="" ng-controller="baseController" prefix="og: http://ogp.me/ns#" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./Machine Learning_files/recaptcha__en.js"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+        <title>Machine Learning</title>
+    <!--<base href="/">--><base href=".">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="https://www.ianstlouis.com/manifest.webmanifest">
+
+			<meta name="description" content="Ian St. Louis">
+	
+    <meta name="keywords" content="ianstlouis.com, Machine Learning, Ian St. Louis Ian St. Louis Ian St. Louis Ian St. Louis UC Berkeley University of California">
+    <meta name="generator" content="ianstlouis.com">
+    <meta name="author" content="ianstlouis.com">
+
+    <meta itemprop="name" content="Machine Learning">
+    <meta itemprop="url" content="https://www.ianstlouis.com/machinelearning">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS Ian St. Louis" href="https://www.ianstlouis.com/extra/rss">
+    <!-- Open Graph data -->
+    <meta property="og:title" name="title" content="Machine Learning">
+
+	        <meta property="og:description" name="description" content="Ian St. Louis">
+	
+    <meta property="og:site_name" content="Ian St. Louis">
+    <meta property="og:url" content="https://www.ianstlouis.com/machinelearning">
+    <meta property="og:type" content="website">
+
+    
+    <meta property="fb:app_id" content="281620631849987">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:url" content="https://www.ianstlouis.com/machinelearning">
+    <meta name="twitter:title" content="Machine Learning">
+
+			<meta name="twitter:description" content="Ian St. Louis">
+	
+	<meta name="twitter:site" content="Ian St. Louis">
+    <meta name="twitter:creator" content="ianstlouis.com">
+
+    <link rel="dns-prefetch" href="https://d28avw9ny3vgf2.cloudfront.net/">
+
+    	
+	<link rel="icon" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/32x32-590415pFSJmeNV.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/32x32-590415pFSJmeNV.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/57x57-590415pFSJmeNV.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/114x114-590415pFSJmeNV.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/72x72-590415pFSJmeNV.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/144x144-590415pFSJmeNV.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/60x60-590415pFSJmeNV.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/120x120-590415pFSJmeNV.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/76x76-590415pFSJmeNV.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/152x152-590415pFSJmeNV.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" sizes="196x196" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/196x196-590415pFSJmeNV.png" type="image/png">
+	<link rel="mask-icon" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/16x16-590415pFSJmeNV.svg">
+	<link rel="icon" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/196x196-590415pFSJmeNV.png" type="image/png">
+	<link rel="icon" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/192x192-590415pFSJmeNV.png" type="image/png">
+	<link rel="icon" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/168x168-590415pFSJmeNV.png" type="image/png">
+	<link rel="icon" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/96x96-590415pFSJmeNV.png" type="image/png">
+	<link rel="icon" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/48x48-590415pFSJmeNV.png" type="image/png">
+	<link rel="icon" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/32x32-590415pFSJmeNV.png" type="image/png">
+	<link rel="icon" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/16x16-590415pFSJmeNV.png" type="image/png">
+	<link rel="icon" href="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/128x128-590415pFSJmeNV.png" type="image/png">
+	<meta name="application-name" content="Ian St. Louis">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-config" content="browserconfig.xml">
+
+	<!-- sourcecss -->
+<link rel="stylesheet" href="./Machine Learning_files/pb.out.front.ver.1557832617636.css">
+<!-- /sourcecss -->
+
+    
+            <script async="" src="./Machine Learning_files/analytics.js"></script><script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-84337976-1', 'auto');
+            </script>
+            
+
+<script src="./Machine Learning_files/jquery.mousewheel.min.js"></script><link href="./Machine Learning_files/css" rel="stylesheet" type="text/css"><link href="./Machine Learning_files/css(1)" rel="stylesheet" type="text/css"><link href="./Machine Learning_files/css" rel="stylesheet" type="text/css"><link href="./Machine Learning_files/css(1)" rel="stylesheet" type="text/css"></head>
+<body id="pb3-body" pb-style="siteBody.getStyles()" style="visibility: visible; background-color: rgb(255, 255, 255); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover; background-image: url(&quot;https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/page/590415NfNQGXU7.png&quot;);" class="webBody layout-wide menu-right04 width0" data-rightclick="1" data-imgshadow="0" data-imgradius="0px" data-imgborder="" data-body-page="590415XH6JLfDk" data-role="web-body">
+
+<!-- ngIf: site.LogoDoUseFile == 1 --><img ng-if="site.LogoDoUseFile == 1" ng-src="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/590415faKDsUxp.png" alt="" style="display:none;" class="ng-scope" src="./Machine Learning_files/590415faKDsUxp.png"><!-- end ngIf: site.LogoDoUseFile == 1 -->
+
+<pb-scrol-to-top><a href="javascript:" id="return-to-top" class="return-to-top return-to-top-590415XH6JLfDk"><i class="icon icon-drop-down-arrow-up"></i></a></pb-scrol-to-top>
+
+<!-- ngView:  --><div class="containerNgView ng-scope" ng-view="" autoscroll="true" page-font-helper=""><!-- ngInclude: DsnTemplate --><div ng-include="DsnTemplate" class="ng-scope"><div class="type-onepager parallax  id-590415XH6JLfDk">
+    <!-- ngInclude: menu.getViewFile() --><div ng-include="menu.getViewFile()" class="ng-scope"><nav class="menu ng-scope" wide-layout-right04="">
+
+    <span class="menuIcon icon icon-menu-web2" pb-style="{&#39;color&#39;: site.MenuFontColor}" style="color: rgb(79, 79, 79);"></span>
+
+    <ul class="first" pb-style="getMenuStyles()" style="display: none; background: rgba(250, 250, 250, 0.9);">
+        <span menu-element=""><!-- ngRepeat: element in menuElements track by element.Guid --><li id="menuList_main" class="top ng-scope" ng-style="menuElement.geHiddenHierarchyBoxColor()" ng-repeat="element in menuElements track by element.Guid" style="visibility: visible;"><a targ="_self" ng-style="menuElement.getStyles(element.PageGuid,&#39;topmenu&#39;,$index)" id="topmenu0590415Ibh9boem" ng-href="/projects" ng-class="{defaultcursor: !(element.Url)}" ng-bind-html="element.Title" class="ng-binding" href="https://www.ianstlouis.com/projects" style="color: rgb(79, 79, 79); background-color: transparent; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-weight: normal; text-decoration: none;">Projects</a><!-- ngIf: element.Children && element.Children.length > 0 --></li><!-- end ngRepeat: element in menuElements track by element.Guid --><li id="menuList_main" class="top ng-scope" ng-style="menuElement.geHiddenHierarchyBoxColor()" ng-repeat="element in menuElements track by element.Guid" style="visibility: visible;"><a targ="_self" ng-style="menuElement.getStyles(element.PageGuid,&#39;topmenu&#39;,$index)" id="topmenu15904156jxVVVSF" ng-href="/resume" ng-class="{defaultcursor: !(element.Url)}" ng-bind-html="element.Title" class="ng-binding" href="https://www.ianstlouis.com/resume" style="color: rgb(79, 79, 79); background-color: transparent; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-weight: normal; text-decoration: none;">Resume</a><!-- ngIf: element.Children && element.Children.length > 0 --></li><!-- end ngRepeat: element in menuElements track by element.Guid --><li id="menuList_main" class="top ng-scope" ng-style="menuElement.geHiddenHierarchyBoxColor()" ng-repeat="element in menuElements track by element.Guid" style="visibility: visible;"><a targ="_self" ng-style="menuElement.getStyles(element.PageGuid,&#39;topmenu&#39;,$index)" id="topmenu2590415THrY7Pk9" ng-href="/aboutme" ng-class="{defaultcursor: !(element.Url)}" ng-bind-html="element.Title" class="ng-binding" href="https://www.ianstlouis.com/aboutme" style="color: rgb(79, 79, 79); background-color: transparent; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-weight: normal; text-decoration: none;">About</a><!-- ngIf: element.Children && element.Children.length > 0 --></li><!-- end ngRepeat: element in menuElements track by element.Guid --><li id="menuList_main" class="top ng-scope" ng-style="menuElement.geHiddenHierarchyBoxColor()" ng-repeat="element in menuElements track by element.Guid" style="visibility: visible;"><a targ="_self" ng-style="menuElement.getStyles(element.PageGuid,&#39;topmenu&#39;,$index)" id="topmenu3590415za5RHhoM" ng-href="/contact" ng-class="{defaultcursor: !(element.Url)}" ng-bind-html="element.Title" class="ng-binding" href="https://www.ianstlouis.com/contact" style="color: rgb(79, 79, 79); background-color: transparent; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-weight: normal; text-decoration: none;">Contact</a><!-- ngIf: element.Children && element.Children.length > 0 --></li><!-- end ngRepeat: element in menuElements track by element.Guid --><li id="menuList_main" class="top ng-scope" ng-style="menuElement.geHiddenHierarchyBoxColor()" ng-repeat="element in menuElements track by element.Guid" style="visibility: visible;"><a targ="_self" ng-style="menuElement.getStyles(element.PageGuid,&#39;topmenu&#39;,$index)" id="topmenu4590415JrIsWszd" ng-href="/blog" ng-class="{defaultcursor: !(element.Url)}" ng-bind-html="element.Title" class="ng-binding" href="https://www.ianstlouis.com/blog" style="color: rgb(79, 79, 79); background-color: transparent; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-weight: normal; text-decoration: none;">Blog</a><!-- ngIf: element.Children && element.Children.length > 0 --></li><!-- end ngRepeat: element in menuElements track by element.Guid --><li id="menuList_main" class="top ng-scope" ng-style="menuElement.geHiddenHierarchyBoxColor()" ng-repeat="element in menuElements track by element.Guid" style="visibility: visible;"><a targ="_self" ng-style="menuElement.getStyles(element.PageGuid,&#39;topmenu&#39;,$index)" id="topmenu5590415ps9twNLE" ng-href="/extras" ng-class="{defaultcursor: !(element.Url)}" ng-bind-html="element.Title" class="ng-binding" href="https://www.ianstlouis.com/extras" style="color: rgb(79, 79, 79); background-color: transparent; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-weight: normal; text-decoration: none;">Extras</a><!-- ngIf: element.Children && element.Children.length > 0 --></li><!-- end ngRepeat: element in menuElements track by element.Guid --><li id="menuList_main" class="top ng-scope" ng-style="menuElement.geHiddenHierarchyBoxColor()" ng-repeat="element in menuElements track by element.Guid" style="visibility: visible;"><a targ="_self" ng-style="menuElement.getStyles(element.PageGuid,&#39;topmenu&#39;,$index)" id="topmenu6590415pUnHIC34" ng-href="about-me-17" ng-class="{defaultcursor: !(element.Url)}" ng-bind-html="element.Title" class="ng-binding" href="https://www.ianstlouis.com/about-me-17" style="color: rgb(79, 79, 79); background-color: transparent; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-weight: normal; text-decoration: none;">Green Product Development</a><!-- ngIf: element.Children && element.Children.length > 0 --></li><!-- end ngRepeat: element in menuElements track by element.Guid --></span>
+        <!-- ngIf: base.cart.quantity > 0 -->
+    </ul>
+
+    <logo><div class="logo" id="sitelogo" pb-style="logoStyleForSection" style="visibility: visible;"><span ng-show="site.LogoDoUseFile != 1" class="ng-hide"><a class="logoTextStyle ng-binding" ng-bind-html="site.LogoText" ng-href="/" href="https://www.ianstlouis.com/" style="color: rgb(0, 0, 0); font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; font-size: 24px; letter-spacing: 2.5px; text-transform: uppercase; font-style: normal; font-weight: normal;">Ian St. Louis</a></span><a ng-href="/" href="https://www.ianstlouis.com/"><img height="10px" class="logoImageStyle" ng-show="site.LogoDoUseFile == 1" ng-src="https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/590415faKDsUxp.png" alt="" src="./Machine Learning_files/590415faKDsUxp.png" style="height: 10px; width: 10px;"></a></div></logo>
+
+    <div class="threeLinesMenuIcon linesMenuIcon" ng-class="{mobile : base.isMobile}"><span style="background:#000000" class="top"></span><span style="background:#000000" class="middle"></span><span style="background:#000000" class="bottom"></span></div>
+
+</nav></div>
+    <main data-role="web" style="opacity: 1;">
+        <div><!-- ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx' track by sec.Guid --><!-- ngIf: onepager.isAdmin == true --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx' track by sec.Guid --><!-- ngIf: onepager.isAdmin == true --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx' track by sec.Guid --><!-- ngIf: onepager.isAdmin == true --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx' track by sec.Guid --><!-- ngIf: onepager.isAdmin == true --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx' track by sec.Guid --><!-- ngIf: onepager.isAdmin == true --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx' track by sec.Guid --><!-- ngIf: onepager.isAdmin == true --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx' track by sec.Guid --><!-- ngIf: onepager.isAdmin == true --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx' track by sec.Guid --><!-- ngIf: onepager.isAdmin == true --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx' track by sec.Guid --><!-- ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx'  | limitTo:onepager.limit track by sec.Guid --><!-- ngIf: onepager.isAdmin == false --><section class="animated fadeIn ng-scope" ng-if="onepager.isAdmin == false" ng-repeat="sec in page.OnePagerSections |orderBy: &#39;Idx&#39;  | limitTo:onepager.limit track by sec.Guid" pb-style="onePagerFront.getStyles(sec)" id="id_0" data-height="4673" data-width="7353" data-type="text" data-fullheight="1" style="background-image: url(&quot;https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/590415CUtLF1ml.png&quot;); min-height: 969px; padding: 0px; background-attachment: fixed;"><div class="mainContent deadCenter" ng-class="sec.FullHeight == 1 &amp;&amp; sec.Type == &#39;text&#39; ? &#39;deadCenter&#39; : &#39;&#39;"><!-- ngInclude: ::onePagerFront.getSectionBlock(sec) --><div ng-include="::onePagerFront.getSectionBlock(sec)" class="ng-scope"><div class="textContent ng-scope">
+    <div bind-unsafe-html="sec.BlockContent" block-content="" class="blockContent" style="color: rgb(79, 79, 79); font-size: 12px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 30px; letter-spacing: 0.25px; font-style: normal; font-weight: normal;"><div class="row ng-scope" id="VAPLPVIKN">
+<div style="width: 53.4483%;" class="column colresize ui-resizable-autohide" id="WRSJEJVBL">
+<div class="block" id="KMYKSDTRN">
+<div style="position: relative;" class="text cke_editable_inline cke_contents_ltr cke_editable cke_focus cke_show_borders" contenteditable="false"><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;"><span style="font-size:48px">Developing new</span><br></h1><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;"><span style="font-size:48px"></span><br></h1><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;"><span style="font-size:48px">Ways to Test a</span><br></h1><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;"><br></h1><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;"><span style="font-size:48px">Classification</span><br></h1><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;"><br></h1><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;"><span style="font-size:48px">Algorithm's</span><br></h1><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;"><br></h1><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;"><span style="font-size:48px">Predictability </span><span style="font-size:48px">on</span></h1><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;"><br></h1><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;"><span style="font-size:48px">New </span><span style="font-size:48px">Data</span></h1><p><br></p><p><br></p><p><br></p></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div><div style="width: 46.3362%;" class="column" id="CTSWIVLRD"><div class="block" id="IVTLXQNWO">
+<div style="position: relative;" class="text cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" contenteditable="false"><p><br></p><p><br></p><p><br></p></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div>
+</div>
+
+
+
+</div>
+</div></div></div></section><!-- end ngIf: onepager.isAdmin == false --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx'  | limitTo:onepager.limit track by sec.Guid --><!-- ngIf: onepager.isAdmin == false --><section class="animated fadeIn ng-scope" ng-if="onepager.isAdmin == false" ng-repeat="sec in page.OnePagerSections |orderBy: &#39;Idx&#39;  | limitTo:onepager.limit track by sec.Guid" pb-style="onePagerFront.getStyles(sec)" id="id_1" data-height="" data-width="" data-type="text" data-fullheight="0" style="background-attachment: fixed;"><div class="mainContent" ng-class="sec.FullHeight == 1 &amp;&amp; sec.Type == &#39;text&#39; ? &#39;deadCenter&#39; : &#39;&#39;"><!-- ngInclude: ::onePagerFront.getSectionBlock(sec) --><div ng-include="::onePagerFront.getSectionBlock(sec)" class="ng-scope"><div class="textContent ng-scope">
+    <div bind-unsafe-html="sec.BlockContent" block-content="" class="blockContent" style="color: rgb(79, 79, 79); font-size: 12px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 30px; letter-spacing: 0.25px; font-style: normal; font-weight: normal;"><div class="row ng-scope" id="DCTKMAQNR">
+<div style="width: 21.875%;" class="column colresize ui-resizable-autohide" id="CJPTAVVAS"><div class="block" id="TCSYRLLVG">
+<div class="image"><img src="./Machine Learning_files/5904150m5xavdq.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div><div style="width: 77.9095%;" class="column" id="HXTJHMMUI">
+<div class="block" id="ODXVCSOBN">
+<div style="position: relative;" class="text cke_editable_inline cke_contents_ltr" contenteditable="false"><h1 style="text-align: justify; color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;">A Little Background</h1>
+
+<hr>
+<p style="text-align:justify">Machine learning is a buzzword nowadays, likely due to its resurgence and increasing prevalence in the media and academia during the past decade or so. Though the field is quite broad and most certainly multifaceted, you would not be doing yourself harm to interpret its meaning by exactly how it reads. Machine learning, in the loosest sense of the phrase, boils down to “teaching” a computer algorithm how to recognize and classify new data without continual supervision.</p>
+
+<p style="text-align:justify">In this page I will provide a brief description of how the machine learning process generally works, outline the issues with current industry standards that I wish to address, and finally, the solutions that I came up with to overcome these problems.</p>
+</div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div>
+</div><div class="row ng-scope" id="CZLFCPSYA"><div class="column" id="IIVJADUWR"><div class="block" id="ULCYXDSFH">
+<div style="position: relative;" class="text cke_editable cke_editable_inline cke_contents_ltr cke_focus cke_show_borders" contenteditable="false"><p style="text-align:justify">Throughout my experiences with the subject, I have settled upon two pervasive questions which still linger in the field: What are the <em>best </em>strategies to tuning parameters of a learning algorithm, and further, how do I know that my algorithm actually has any predictive power on new data?</p><p style="text-align:justify">During the summer of 2016, the latter question was precisely the obstacle which I aimed to overcome.<br></p><p style="text-align:justify">To see just the <strong>final solution,</strong> skip to the very last section on the page.<br></p></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div></div>
+
+<div class="row ng-scope" id="FJHQWUFHD">
+<div style="width: 99.7%;" class="column ui-resizable-autohide" id="HVHAFPRLK">
+<div class="block" id="IWDVERSSY">
+<div style="position: relative;" class="text cke_editable_inline cke_contents_ltr" contenteditable="false"><h1 style="text-align: justify; color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;">The Industry Standard</h1>
+
+<hr>
+<p style="text-align:justify"><em>Cross Validation </em>and the <em>Holdout </em>method are two of the most common methods of determining an algorithm’s <strong>test error. </strong>Explicitly, test error is the ratio of new data fed to the algorithm which it classified <em>incorrectly</em>. If this error rate is low, your algorithm is misclassifying a small percentage of the new data. This is ideal. There is another quantitative metric to determine an algorithms predictability on new data, and that is <strong>tune error. </strong>This is the ratio of points that the algorithm misclassified on the data used to <em>train</em> it. This is very important, and can be interpreted as how <em>overfit </em>your algorithm is on your training data. With one very small adjustment to the method by which this algorithm was trained, the difference in overfitting is easily illustrated below.</p>
+
+<ol>
+</ol>
+</div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div>
+</div><div class="row ng-scope" id="RPRAUULLS"><div style="width: 51.6164%;" class="column colresize ui-resizable-autohide" id="AUFXTRASQ"><div class="block" id="MGFJVQDZK">
+<div style="position: relative;" class="text" contenteditable="false"><h2 style="color: rgb(61, 61, 61); font-size: 18px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 1px; text-transform: uppercase; font-style: normal; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Underfit to the training data</h2>
+</div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div><div style="width: 48.1681%;" class="column" id="IXXCLFKYC"><div class="block" id="JWYAKAWMW">
+<div style="position: relative;" class="text" contenteditable="false"><h2 style="color: rgb(61, 61, 61); font-size: 18px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 1px; text-transform: uppercase; font-style: normal; font-weight: normal;">Overfit to the training data</h2>
+</div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row ng-scope" id="LSJSRXNRZ">
+<div class="column" id="SVNIMVEZJ">
+<div class="block" id="OMOIBJDGH">
+<div class="image"><img src="./Machine Learning_files/590415hn4k3umh.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div>
+</div>
+
+<div class="row ng-scope" id="OGLYICAGI">
+<div style="width: 51.4009%;" class="column colresize ui-resizable-autohide" id="BYDTFOMXS">
+<div class="block" id="LWNRPWVHU">
+<div style="position: relative;" class="text" contenteditable="false"><p style="text-align:center">This algorithm will likely generalize well when fed new data to test on. It seems to be the winner of the two in terms of capturing the true <em>distribution </em>of the data, not just where each of the points lie.</p>
+
+<hr></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div><div style="width: 48.3836%;" class="column" id="TVBIHTQUI"><div class="block" id="KEAECHTSZ">
+<div style="position: relative;" class="text" contenteditable="false"><p style="text-align:center">This algorithm will generalize very poorly to new data, as it has tuned to the training data far too much. It will likely classify a high percentage of new data from the same distributions incorrectly when tested on.</p>
+
+<hr></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div>
+</div>
+
+
+
+
+
+<div class="row ng-scope" id="LKSOLXPVS">
+<div style="width: 63.7931%;" class="column colresize ui-resizable-autohide" id="JNYTOMLDP">
+<div class="block" id="ZMZGMRZWH">
+<div style="position: relative;" class="text cke_editable_inline cke_contents_ltr" contenteditable="false"><p style="text-align:justify">The graph on the right is a popular graph to illustrate the phenomenon above. For nearly all applications, a classification algorithm will be most desirable when it sits at the lowest point of the red curve in terms of complexity. At this point, the rate of misclassification for the algorithm on new data is the lowest (as per various methods of approximating test error), signifying the best "understanding" of the underlying distribution of the data.</p>
+
+<p style="text-align:justify">The blue curve is the misclassification rate on the <em>training </em>data. As the algorithm's complexity increases, it classifies fewer of these points incorrectly. As a consequence, it loses touch with the underlying distribution of the data, resulting in a higher and higher test error (red line).</p>
+</div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div><div style="width: 35.9914%;" class="column" id="FELOYKDSZ"><div class="block" id="EMSWNDRAV">
+<div class="image"><img src="./Machine Learning_files/590415wZOvOj0P.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div>
+</div>
+
+
+
+
+
+</div>
+</div></div></div></section><!-- end ngIf: onepager.isAdmin == false --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx'  | limitTo:onepager.limit track by sec.Guid --><!-- ngIf: onepager.isAdmin == false --><section class="animated fadeIn ng-scope" ng-if="onepager.isAdmin == false" ng-repeat="sec in page.OnePagerSections |orderBy: &#39;Idx&#39;  | limitTo:onepager.limit track by sec.Guid" pb-style="onePagerFront.getStyles(sec)" id="id_2" data-height="11739" data-width="18325" data-type="text" data-fullheight="0" style="background-image: url(&quot;https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/590415IfmbKejI.png&quot;); background-attachment: fixed;"><div class="mainContent" ng-class="sec.FullHeight == 1 &amp;&amp; sec.Type == &#39;text&#39; ? &#39;deadCenter&#39; : &#39;&#39;"><!-- ngInclude: ::onePagerFront.getSectionBlock(sec) --><div ng-include="::onePagerFront.getSectionBlock(sec)" class="ng-scope"><div class="textContent ng-scope">
+    <div bind-unsafe-html="sec.BlockContent" block-content="" class="blockContent" style="color: rgb(79, 79, 79); font-size: 12px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 30px; letter-spacing: 0.25px; font-style: normal; font-weight: normal;"><div class="row ng-scope" id="YFKTQUQLS">
+<div class="column" id="UOKJLXUFR">
+<div class="block" id="FJUGOFRCH">
+<div style="position: relative;" class="text" contenteditable="false"><p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div>
+</div>
+
+</div>
+</div></div></div></section><!-- end ngIf: onepager.isAdmin == false --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx'  | limitTo:onepager.limit track by sec.Guid --><!-- ngIf: onepager.isAdmin == false --><section class="animated fadeIn ng-scope" ng-if="onepager.isAdmin == false" ng-repeat="sec in page.OnePagerSections |orderBy: &#39;Idx&#39;  | limitTo:onepager.limit track by sec.Guid" pb-style="onePagerFront.getStyles(sec)" id="id_3" data-height="" data-width="" data-type="text" data-fullheight="0" style="background-attachment: fixed;"><div class="mainContent" ng-class="sec.FullHeight == 1 &amp;&amp; sec.Type == &#39;text&#39; ? &#39;deadCenter&#39; : &#39;&#39;"><!-- ngInclude: ::onePagerFront.getSectionBlock(sec) --><div ng-include="::onePagerFront.getSectionBlock(sec)" class="ng-scope"><div class="textContent ng-scope">
+    <div bind-unsafe-html="sec.BlockContent" block-content="" class="blockContent" style="color: rgb(79, 79, 79); font-size: 12px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 30px; letter-spacing: 0.25px; font-style: normal; font-weight: normal;"><div class="row ng-scope" id="TOWSYCEUI"><div class="column" id="RJGAPBEQT"><div class="block" id="HHPCOFDNB">
+<div style="position: relative;" class="text cke_editable cke_editable_inline cke_contents_ltr cke_show_borders cke_focus" contenteditable="false"><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;">Closing in on the Issue<br></h1><hr></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div></div><div class="row ng-scope" id="KSLONLSQJ">
+<div style="width: 69.7198%;" class="column colresize ui-resizable-autohide" id="CYREJSGNL">
+<div class="block" id="KTJHDDRTP">
+<div style="position: relative;" class="text cke_editable_inline cke_contents_ltr" contenteditable="false"><p style="text-align:justify">Now a large problem which arises in reality is that researchers do not have access to a continual supply of new data. In fact, access to new data is <em>very </em>uncommon. As such, researchers have developed ways of estimating this test error, to provide a quantitative measurement of how good an algorithm performs. There are issues I found unsettling with the two methods identified above which I attempted to mitigate through the development of new test error approximation algorithms. Briefly, the issues are described below.</p>
+
+<p style="text-align:justify">Cross validation and the holdout method, in short, hide a fraction of the sample data from the learning algorithm. Once a classifier is <em>trained</em> on the part of the sample data which is not hidden, the ratio of test error described above can be found by simply feeding the algorithm with the previously hidden data and analyzing the fraction of which it misclassified. The two major issues I find with cross-validation are that:</p>
+
+<ol>
+	<li style="text-align:justify">The classifier that is built while measuring this <em>test error </em>through cross-validation is quite different from the one that the researcher will ultimately stick with, which has been trained on all of that data available— not just a fraction of it. The large assumption here is that the distribution represented by the fraction of the dataset is <em>close enough </em>to the actual distribution from which the data came. In certain data distributions, this assumption can be proven to be detrimental.</li>
+	<li style="text-align:justify">Similar to the first point, if a researcher only has a very small amount of data to work with— let’s say, a cancer researcher. If he only has 6 known cases of a new cancer type to help identify the traits which give it away, should he really start dealing with fractions of this dataset? How could he be so sure that eliminating 1, 2, or even 3 data points are still going to provide a classifier which has a high predictive power?</li>
+</ol>
+</div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div><div style="width: 30.0647%;" class="column" id="OKAHPXUMU"><div class="block" id="SXIXNKVGE">
+<div class="image"><img src="./Machine Learning_files/590415C607NhYJ.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div>
+</div>
+
+<div class="row ng-scope" id="EWEMPTSLX">
+<div class="column" id="XVNTHXWNM">
+<div class="block" id="ONMVRHOHJ">
+<div style="position: relative;" class="text cke_editable_inline cke_contents_ltr cke_editable cke_show_borders cke_focus" contenteditable="false"><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;">My Solutions</h1><hr><p style="text-align: justify;">Perhaps the most exciting part of this project was that the work I was doing had very little established research to guide it. I took many shots in the dark, and watched almost all of them crash and burn as I soon figured out just how poorly they performed. The final solution that I came up upon was to create an algorithm which <em>generates </em>new data based off the traits of the available sample data, such that a trained classifier can be <em>tested</em> on this new data. This new data, if the algorithm is designed well, should be considered closely representative of the true distribution of the sample data. In this way, there is no data partitioning and thus probable misrepresentation of the true distribution of the data, and the entirety of the available data can confidently be used to train a learning algorithm.<br></p><p style="text-align: justify;">It is worth noting that I did not come up with the idea of <em>pseudo-data ­</em>generation algorithms, but I came up with quite a few methods which fall into that broad category. Other established methods within this category that I experimented with included bootstrapping, kernel density estimation, and other forms of probability density fitting.<br></p></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+</div>
+</div></div></div></section><!-- end ngIf: onepager.isAdmin == false --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx'  | limitTo:onepager.limit track by sec.Guid --><!-- ngIf: onepager.isAdmin == false --><section class="animated fadeIn ng-scope" ng-if="onepager.isAdmin == false" ng-repeat="sec in page.OnePagerSections |orderBy: &#39;Idx&#39;  | limitTo:onepager.limit track by sec.Guid" pb-style="onePagerFront.getStyles(sec)" id="id_4" data-height="4369" data-width="5153" data-type="text" data-fullheight="0" style="background-image: url(&quot;https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/590415kfQyhaZj.png&quot;); background-attachment: fixed;"><div class="mainContent" ng-class="sec.FullHeight == 1 &amp;&amp; sec.Type == &#39;text&#39; ? &#39;deadCenter&#39; : &#39;&#39;"><!-- ngInclude: ::onePagerFront.getSectionBlock(sec) --><div ng-include="::onePagerFront.getSectionBlock(sec)" class="ng-scope"><div class="textContent ng-scope">
+    <div bind-unsafe-html="sec.BlockContent" block-content="" class="blockContent" style="color: rgb(79, 79, 79); font-size: 12px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 30px; letter-spacing: 0.25px; font-style: normal; font-weight: normal;">
+
+
+
+<div class="row ng-scope" id="HZIYKGYSN">
+<div class="column" id="WCFNNKVGG">
+<div class="block ishovered" id="ZNRUHGDJQ">
+<div style="position: relative;" class="text cke_editable cke_editable_inline cke_contents_ltr cke_focus cke_show_borders" contenteditable="false"><p></p><p><br></p><p><br></p><p><br></p></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div>
+</div>
+
+</div>
+</div></div></div></section><!-- end ngIf: onepager.isAdmin == false --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx'  | limitTo:onepager.limit track by sec.Guid --><!-- ngIf: onepager.isAdmin == false --><section class="animated fadeIn ng-scope" ng-if="onepager.isAdmin == false" ng-repeat="sec in page.OnePagerSections |orderBy: &#39;Idx&#39;  | limitTo:onepager.limit track by sec.Guid" pb-style="onePagerFront.getStyles(sec)" id="id_5" data-height="" data-width="" data-type="text" data-fullheight="0" style="background-attachment: fixed;"><div class="mainContent" ng-class="sec.FullHeight == 1 &amp;&amp; sec.Type == &#39;text&#39; ? &#39;deadCenter&#39; : &#39;&#39;"><!-- ngInclude: ::onePagerFront.getSectionBlock(sec) --><div ng-include="::onePagerFront.getSectionBlock(sec)" class="ng-scope"><div class="textContent ng-scope">
+    <div bind-unsafe-html="sec.BlockContent" block-content="" class="blockContent" style="color: rgb(79, 79, 79); font-size: 12px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 30px; letter-spacing: 0.25px; font-style: normal; font-weight: normal;"><div class="row ng-scope" id="DETPBVZWK">
+<div class="column" id="KDKSEIBPU">
+<div class="block" id="OXOSOLMUL">
+<div style="position: relative;" class="text" contenteditable="false"><h2 style="text-align: justify; color: rgb(61, 61, 61); font-size: 18px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 1px; text-transform: uppercase; font-style: normal; font-weight: normal;">Methods</h2>
+
+<hr>
+<p style="text-align: justify;">The first few methods I came up with were quite bad; and I will explain why. But going through each of these methods were very important stepping stones in guiding my thought progression to come up with my final algorithm, which performs extraordinarily well.</p>
+</div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div>
+</div>
+
+<div class="row ng-scope" id="QYTBVOTXD">
+<div style="width: 49.1379%;" class="column colresize ui-resizable-autohide" id="TQNZSJONZ">
+<div class="block" id="IASXXVRSJ">
+<div style="position: relative;" class="text" contenteditable="false"><p style="text-align:justify">To start, I decided to try a simple interpolation scheme between points in the existing dataset in order to create a new set of data on which to test the algorithm’s efficacy. With this idea in mind, there were a few possible directions to go.</p>
+
+<p style="text-align:justify">Firstly, I decided to focus on the <em>decision boundary </em>between classes in a sample data set. I chose to generate this new test set based on the points that the algorithm misclassified from the training set— a new point was to be generated at the Euclidean midpoint between every <em>misclassified </em>point in feature space and the nearest <em>correctly </em>classified point of the same class. The resulting point was then labeled as a member of this class, then fed into the algorithm to see if it got the label correct.</p>
+</div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div><div class="block" id="WYYHQFWSA">
+<div class="image"><img src="./Machine Learning_files/590415SCze9bdE.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div><div style="width: 50.6465%;" class="column" id="VDPAOWEXB"><div class="block" id="FYYXZHLMQ">
+<div class="image"><img src="./Machine Learning_files/590415o42MfjA3.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div><div class="block" id="DUFSZJTRF">
+<div style="position: relative;" class="text cke_editable_inline cke_contents_ltr" contenteditable="false"><p style="text-align:justify">This resulted in two clear issues with this method. For one, since test error is a ratio of misclassified points to total points, if the algorithm misclassified <strong>none </strong>of the training data, this method would report a test error of <strong>0</strong>, giving the researcher a false sense of the classifier’s efficacy. The second issue is that the set of data to be tested on has only the same number of elements as the number of points the algorithm. As such, the denominator of the test error ratio is small, leading to inflated rates of test error.</p>
+
+<p style="text-align: justify;">For the graph on the left, the orange line is the resulting test error curve for this method. This graph is simply the algorithm’s tune and test error rates (ratios) as a function of its complexity. In short, the blue line at the bottom of the graph is the true test error curve; which is what this line is <em>supposed to</em> look like.</p>
+</div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row ng-scope" id="MGLTCAXQD">
+<div style="width: 49.1379%;" class="column colresize ui-resizable-autohide" id="KCKVCTWDY">
+<div class="block" id="VZNZMOGFB">
+<div style="position: relative;" class="text cke_editable_inline cke_contents_ltr" contenteditable="false"><p style="text-align:justify">Naturally, I tried a different method. This time, I wanted to see what this test error curve looked like if I generated a test set by the following method: pair every data-point in each class with a different, randomly chosen point of the same class. Find a point that lies on the same line as these two points, and throw the resulting point into the test set with the same class label as the points from which it came. For a simple distribution, here is what that looks like for one class.</p>
+</div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div><div style="width: 50.6465%;" class="column" id="MFXMOHDEC"><div class="block" id="AZOZZLVDO">
+<div style="width: 99.9104%; height: auto;" class="image"><img src="./Machine Learning_files/5904151JBIPfcn.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div>
+</div>
+
+
+
+<div class="row ng-scope" id="MBABAZZBD">
+<div style="width: 56.8965%;" class="column colresize ui-resizable-autohide" id="OOGTJZKMW"><div class="block" id="ZOCLTUQQU">
+<div class="image"><img src="./Machine Learning_files/590415VT8K4R0U.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div><div style="width: 42.8879%;" class="column ui-resizable-autohide" id="KYTILZBOI">
+<div class="block" id="PSYZJIAZU">
+<div style="position: relative;" class="text cke_editable cke_editable_inline cke_contents_ltr cke_show_borders cke_focus" contenteditable="false"><p style="text-align:justify">I also tried fitting probability distributions to determine where along the line of interpolation or extrapolation that the new point landed— but to little avail. For various reasons, these interpolation schemes worked out quite poorly. A clear instance of linear interpolation failing was in a test case which I called the XOR problem; data that, as it sits in Euclidean space, is neighbored by large clusters of data belonging to the opposite class. Since these methods relied on interpolation between random pairs of data points, the resulting point often sat clearly in a cluster belonging to a different class.</p><p style="text-align:justify">Perhaps an even more important cause for failure was one that I took some time to stumble upon: what does any of this new data being generated have to do with the sample data? What does linear interpolation or extrapolation between random points have to do with the <em>true distribution</em> of the sample points? The answer, really, is that it doesn’t. Not even close.</p><p style="text-align:justify">In my frustration, I was led to a somewhat infantile question. If one line was not doing the trick, why not draw more? Could using the placement in Euclidean space of multiple points in relation to one another have a more beneficial affect? Though it was more difficult to come across, the answer this time was <em>yes.</em><br></p><hr></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div></div></div></section><!-- end ngIf: onepager.isAdmin == false --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx'  | limitTo:onepager.limit track by sec.Guid --><!-- ngIf: onepager.isAdmin == false --><section class="animated fadeIn ng-scope" ng-if="onepager.isAdmin == false" ng-repeat="sec in page.OnePagerSections |orderBy: &#39;Idx&#39;  | limitTo:onepager.limit track by sec.Guid" pb-style="onePagerFront.getStyles(sec)" id="id_6" data-height="3809" data-width="4889" data-type="text" data-fullheight="0" style="background-image: url(&quot;https://d2f8l4t0zpiyim.cloudfront.net/000_clients/590415/file/590415qiVku7PI.png&quot;); background-attachment: fixed;"><div class="mainContent" ng-class="sec.FullHeight == 1 &amp;&amp; sec.Type == &#39;text&#39; ? &#39;deadCenter&#39; : &#39;&#39;"><!-- ngInclude: ::onePagerFront.getSectionBlock(sec) --><div ng-include="::onePagerFront.getSectionBlock(sec)" class="ng-scope"><div class="textContent ng-scope">
+    <div bind-unsafe-html="sec.BlockContent" block-content="" class="blockContent" style="color: rgb(79, 79, 79); font-size: 12px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 30px; letter-spacing: 0.25px; font-style: normal; font-weight: normal;"><div class="row ng-scope" id="BWXNTAFWX">
+<div class="column" id="EAFUJLQFK">
+<div class="block" id="LDLVSZGYD">
+<div style="position: relative;" class="text" contenteditable="false"><p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div>
+</div>
+
+</div>
+</div></div></div></section><!-- end ngIf: onepager.isAdmin == false --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx'  | limitTo:onepager.limit track by sec.Guid --><!-- ngIf: onepager.isAdmin == false --><section class="animated fadeIn ng-scope" ng-if="onepager.isAdmin == false" ng-repeat="sec in page.OnePagerSections |orderBy: &#39;Idx&#39;  | limitTo:onepager.limit track by sec.Guid" pb-style="onePagerFront.getStyles(sec)" id="id_7" data-height="" data-width="" data-type="text" data-fullheight="0" style="background-attachment: fixed;"><div class="mainContent" ng-class="sec.FullHeight == 1 &amp;&amp; sec.Type == &#39;text&#39; ? &#39;deadCenter&#39; : &#39;&#39;"><!-- ngInclude: ::onePagerFront.getSectionBlock(sec) --><div ng-include="::onePagerFront.getSectionBlock(sec)" class="ng-scope"><div class="textContent ng-scope">
+    <div bind-unsafe-html="sec.BlockContent" block-content="" class="blockContent" style="color: rgb(79, 79, 79); font-size: 12px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 30px; letter-spacing: 0.25px; font-style: normal; font-weight: normal;"><div class="row ng-scope" id="ENAKGJDFF">
+<div class="column" id="QQHAXOWMI">
+<div class="block" id="JNNDOOQPK">
+<div style="position: relative;" class="text cke_editable_inline cke_contents_ltr cke_editable cke_show_borders cke_focus" contenteditable="false"><h1 style="color: rgb(61, 61, 61); font-size: 22px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 2px; text-transform: uppercase; font-style: normal; font-weight: normal;">The Final Solution</h1><hr><p>The final solution I came up with has many advantageous characteristics. To start, the algorithmic process is as follows.</p><ol><li>For each data point in every “class” of your sample data, identify the closest N nearest neighbors in Euclidean space.</li><li>Create vectors {v1, v2, v3 … vn} from this point to each of its closest N neighbors.<ul><li>Note: <em>N </em>is the most variable parameter in this algorithm. I found that for large datasets with relatively few large clusters, round(sqrt(<em>N</em>)) is the optimal choice of neighbors. For most other cases, including real data and test cases that I generated, the optimal choice of neighbors is 4.</li></ul></li><li>Create a vector, <em>R</em>, which is the vector resulting from the component sum of the vectors</li><li>Plot a new point at the head of <em>R</em>, and add this point to the <em>test set</em></li><li>Feed the test set into the trained classifier to return a quantitative measure of <em>test error</em></li></ol><p>This algorithm takes advantage of the relative density (read: clustering) of neighboring points in Euclidean space; a key component in ensuring that the new points are relevant to the original data distribution. This method also produces the same number of test points as there were points to train on, resolving the issue mentioned earlier of having too few or too many total points in the denominator of the test error ratio. On</p><p>The spatial intuition for this method is as follows (choosing 3 nearest neighbors):<br></p></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div>
+</div>
+
+<div class="row ng-scope" id="CLIRZWTEF">
+<div style="width: 49.85%;" class="column colresize ui-resizable-autohide" id="IKMBISKFM">
+<div class="block" id="XZOCTAIOR">
+<div class="image"><img src="./Machine Learning_files/590415gIY9eCqF.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div><div class="block" id="DTYYKPABL">
+<div style="position: relative;" class="text cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" contenteditable="false"><p style="text-align:center">Sample points, as they sit in 2D Euclidean space.<br></p></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div><div class="block" id="IAGJJAQWO">
+<div class="image"><img src="./Machine Learning_files/590415ZNqHqH5Y.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div><div style="width: 49.85%;" class="column" id="GJVQEZYWC"><div class="block" id="AWIWUJJVL">
+<div class="image"><img src="./Machine Learning_files/590415gymaEaN5.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div><div class="block" id="TUZTBEKQX">
+<div style="position: relative;" class="text cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" contenteditable="false"><p style="text-align:center">Shown for one class, the nearest neighbor vectors are drawn in red.<br></p></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div><div class="block" id="LLAHVLSPG">
+<div class="image"><img src="./Machine Learning_files/590415rgDiBv5I.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div>
+</div>
+
+
+
+
+
+
+
+<div class="row ng-scope" id="IHBDOGXPT">
+<div style="width: 49.85%;" class="column colresize ui-resizable-autohide" id="BBAWZPPSJ">
+<div class="block" id="BSLNRIMXZ">
+<div style="position: relative;" class="text cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" contenteditable="false"><p style="text-align:center">The component sum of these vectors, <em>R</em>, shown in green, is determined for each point.<br></p></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div><div style="width: 49.85%;" class="column" id="AWQOYXEOA"><div class="block" id="VQEVZHZRP">
+<div style="position: relative;" class="text" contenteditable="false"><p style="text-align: center;">The new data lies at the head of each resulting vector.</p>
+</div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div>
+</div>
+
+
+
+
+
+
+
+<div class="row ng-scope" id="WUSAFQVIR"><div class="column" id="LEGAYRAMN"><div class="block" id="TQEIWYFQM">
+<div style="position: relative;" class="text cke_editable cke_editable_inline cke_contents_ltr cke_show_borders cke_focus" contenteditable="false"><h2 style="color: rgb(61, 61, 61); font-size: 18px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 1px; text-transform: uppercase; font-style: normal; font-weight: normal;">IN 3D<br></h2></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div></div><div class="row ng-scope" id="XJDQGWUFI"><div style="width: 49.85%;" class="column colresize ui-resizable-autohide" id="OWNDFYSMX"><div class="block" id="FHIUAPGEL">
+<div class="image"><img src="./Machine Learning_files/590415PEByEWLc.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div><div style="width: 49.85%;" class="column" id="QODCJJPUC"><div class="block" id="TBAADQOCC">
+<div class="image"><img src="./Machine Learning_files/590415uwKBPMQz.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div></div><div class="row ng-scope" id="WRJXFEJQF">
+<div class="column" id="DANYFXPHQ">
+<div class="block" id="FKMBRLQOJ">
+<div style="position: relative;" class="text cke_editable_inline cke_contents_ltr cke_editable cke_show_borders" contenteditable="false"><h2 style="color: rgb(61, 61, 61); font-size: 18px; font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 1px; text-transform: uppercase; font-style: normal; font-weight: normal;">Testing the Algorithm</h2><p>For an exhaustive list of test cases, my algorithm performed exceptionally. The biggest issues yet to solve are its time complexity [O(n2)], and a robust rationale for choosing how many nearest neighbors to consider. When the algorithm was tested on a Support Vector Machine classifier, trained on real data, the following tune vs. test errors were produced. What is most relevant is how close the blue line is (my algorithm’s error) to the black line (actual error), and how cross-validation— in this particular case—misjudges the algorithm’s test error. On the right is the difference between the actual error and what the algorithm’s reported. Naturally, the closer to 0 each line on the graph resides, the better it was in estimation of the true test error.<br></p></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="row ng-scope" id="VQFOOMUIV">
+<div style="width: 49.85%;" class="column ui-resizable-autohide" id="DPFKYBZWX">
+<div class="block" id="KQKKBHYFF">
+<div class="image"><img src="./Machine Learning_files/590415JIivZMkT.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div>
+</div><div style="width: 49.85%;" class="column" id="RWAJAOAWG"><div class="block" id="VGDBFOKPM">
+<div style="width: 99.4624%; height: auto;" class="image"><img src="./Machine Learning_files/590415jQaeKEny.png" alt=""></div>
+<span class="movehandle"></span><span class="confhandle"></span>
+</div></div>
+</div>
+
+
+
+
+
+</div>
+</div></div></div></section><!-- end ngIf: onepager.isAdmin == false --><!-- end ngRepeat: sec in page.OnePagerSections |orderBy: 'Idx'  | limitTo:onepager.limit track by sec.Guid --></div>
+
+        <!-- ngIf: site.IsFooterActive == 1 -->
+    </main>
+    <div><div class="socialMediaIcons isPro" misc-helper=""><ul><!-- ngIf: site.EnableRSS == 1 --><!-- ngIf: site.ShowSocialMediaLinks != 0 --><span class="otherIcons ng-scope" ng-if="site.ShowSocialMediaLinks != 0"><!-- ngIf: site.SocialFacebookUrl != undefined && site.SocialFacebookUrl != null && site.SocialFacebookUrl != '' --><!-- ngIf: site.SocialTwitterUrl != undefined && site.SocialTwitterUrl != null && site.SocialTwitterUrl != '' --><!-- ngIf: site.SocialPinterestUrl != undefined && site.SocialPinterestUrl != null && site.SocialPinterestUrl != '' --><!-- ngIf: site.SocialFlickrUrl != undefined && site.SocialFlickrUrl != null && site.SocialFlickrUrl != '' --><!-- ngIf: site.SocialInstagramUrl != undefined && site.SocialInstagramUrl != null && site.SocialInstagramUrl != '' --><!-- ngIf: site.SocialLinkedInUrl != undefined && site.SocialLinkedInUrl != null && site.SocialLinkedInUrl != '' --><li ng-if="site.SocialLinkedInUrl != undefined &amp;&amp; site.SocialLinkedInUrl != null &amp;&amp; site.SocialLinkedInUrl != &#39;&#39;" class="ng-scope"><a target="_blank" ng-href="https://www.linkedin.com/in/ianstlouis" href="https://www.linkedin.com/in/ianstlouis"><span class="smicon smicon-1-linkedin" style="color:#91a1a6"></span></a></li><!-- end ngIf: site.SocialLinkedInUrl != undefined && site.SocialLinkedInUrl != null && site.SocialLinkedInUrl != '' --><!-- ngIf: site.SocialBlogUrl != undefined && site.SocialBlogUrl != null && site.SocialBlogUrl != '' --></span><!-- end ngIf: site.ShowSocialMediaLinks != 0 --><!-- ngIf: socialMediaSite.doGoogleCDNBlock != true && site.SocialShowShareButtons != undefined && site.SocialShowShareButtons != null && site.SocialShowShareButtons != '' --><li ng-if="socialMediaSite.doGoogleCDNBlock != true &amp;&amp; site.SocialShowShareButtons != undefined &amp;&amp; site.SocialShowShareButtons != null &amp;&amp; site.SocialShowShareButtons != &#39;&#39;" class="ng-scope"><a target="_blank" pb-click="socialMediaSite.clickShare()"><span class="smicon smicon-1-share" style="color:#91a1a6"></span></a><!-- ngIf: socialMediaSite.shareInclude --></li><!-- end ngIf: socialMediaSite.doGoogleCDNBlock != true && site.SocialShowShareButtons != undefined && site.SocialShowShareButtons != null && site.SocialShowShareButtons != '' --><!-- ngIf: site.SocialFollowButton != '' --><li ng-if="site.SocialFollowButton != &#39;&#39; " class="ng-scope"><a id="socialMediaFollowButton" target="_blank" pb-click="socialMediaSite.clickFollow()"><span class="smicon smicon-1-follow" style="color:#91a1a6"></span></a><!-- ngIf: socialMediaSite.followInclude --></li><!-- end ngIf: site.SocialFollowButton != '' --><!-- ngIf: site.SocialHideLikeButton != 1 --><li class="pboxLike ng-scope" ng-if="site.SocialHideLikeButton != 1"><span pb-click="socialMediaSite.clickPbLike()" class="smicon smicon-1-heart" style="color:#91a1a6"></span><span pb-click="socialMediaSite.clickPbLike()" class="noBubble ng-binding" style="color:#91a1a6;">15</span><!-- ngIf: socialMediaSite.pbLikeInclude --></li><!-- end ngIf: site.SocialHideLikeButton != 1 --></ul></div><!-- ngIf: !socialMediaSite.canUsePro --></div>
+</div></div></div>
+
+<div class="base">
+    <!-- ngIf: base.popup.show -->
+</div>
+
+<logout-front><!-- ngIf: site.IsLoggedIn --></logout-front>
+
+<script src="./Machine Learning_files/3rd.out.front.ver.5.js"></script>
+
+<!-- sourcejs -->
+<script src="./Machine Learning_files/pb.out.front.ver.1557832617635.js"></script>
+<!-- /sourcejs -->
+
+
+<script>
+    var isLoadedFromServer = true;
+    var seeLiveMobApp = "";
+
+    if(seeLiveMobApp == true || seeLiveMobApp == 1){
+        if(pb.utils.isMobile() == true){
+            pbAng.isMobileFront = seeLiveMobApp;
+        }
+    }
+    var serverData = {
+        siteJson : {"Guid":"162407sqEJCymzcM","Id":590415,"Url":"ianstlouis.com","SecondaryUrl":"ianstlouis.com","AccountType":1,"LanguageId":0,"IsSiteLocked":0,"MetaValidationTag":null,"CustomCss":"","CustomHeaderBottom":null,"CustomBodyBottom":"","MobileLogoText":"Ian St. Louis","MobileMenuBoxColor":"#fafafa","MobileLogoDoUseFile":0,"MobileLogoFileName":null,"MobileLogoFileHeight":null,"MobileLogoFileWidth":null,"MobileLogoFileNameS3Id":null,"MobileLogoFilePath":null,"MobileLogoFontFamily":"'Century Gothic',CenturyGothic,AppleGothic","MobileLogoFontSize":"17px","MobileLogoFontVariant":null,"MobileLogoFontColor":"#000000","MobileMenuFontFamily":"'Century Gothic',CenturyGothic,AppleGothic","MobileMenuFontSize":"14px","MobileMenuFontVariant":null,"MobileMenuFontColor":"#4f4f4f","MobileMenuIconColor":"#4f4f4f","SiteTitle":"Ian St. Louis","SeoKeywords":"Ian St. Louis Ian St. Louis Ian St. Louis Ian St. Louis UC Berkeley University of California","SeoDescription":"Ian St. Louis | Mechanical Engineer at UC Berkeley","ShowSocialMediaLinks":1,"SocialButtonStyle":1,"SocialButtonColor":"#91a1a6","SocialShowShareButtons":1,"SocialFacebookShareUrl":null,"SocialFacebookUrl":null,"SocialTwitterUrl":null,"SocialFlickrUrl":null,"SocialLinkedInUrl":"https:\/\/www.linkedin.com\/in\/ianstlouis","SocialGooglePlusUrl":null,"SocialPinterestUrl":null,"SocialInstagramUrl":null,"SocialBlogUrl":null,"SocialFollowButton":1,"SocialFacebookPicFileName":null,"SocialHideLikeButton":0,"SocialFacebookPicFileNameS3Id":null,"SocialFacebookPicFilePath":null,"BgImagePosition":1,"BgUseImage":0,"BgColor":"#ffffff","BgFileName":null,"BgFileWidth":null,"BgFileHeight":null,"BgFileNameS3Id":null,"BgFilePath":null,"BgBoxColor":"#fafafa","LogoDoUseFile":1,"LogoText":"Ian St. Louis","LogoFileName":"590415faKDsUxp.png","LogoFileHeight":800,"LogoFileWidth":782,"LogoFileNameS3Id":1,"LogoFilePath":"https:\/\/d2f8l4t0zpiyim.cloudfront.net\/000_clients\/590415\/file\/590415faKDsUxp.png","LogoDisplayHeight":"10px","LogoFontFamily":"'Century Gothic',CenturyGothic,AppleGothic","LogoFontVariant":null,"LogoFontSize":"24px","LogoFontColor":"#000000","LogoFontSpacing":"5px","LogoFontUpperCase":1,"ActiveMenuFontIsUnderline":0,"ActiveMenuFontIsItalic":0,"ActiveMenuFontIsBold":0,"ActiveMenuFontColor":"#000000","HoverMenuFontIsUnderline":0,"HoverMenuFontIsItalic":0,"HoverMenuFontIsBold":0,"HoverMenuBackgroundColor":null,"ActiveMenuBackgroundColor":null,"MenuFontFamily":"'Century Gothic',CenturyGothic,AppleGothic","MenuFontVariant":"","MenuFontSize":"12px","MenuFontColor":"#4f4f4f","MenuFontColorHover":"#000000","MenuBoxColor":"#fafafa","MenuBoxBorder":1,"MenuFontSpacing":"8px","MenuFontUpperCase":1,"H1FontFamily":"'Century Gothic',CenturyGothic,AppleGothic","H1FontVariant":null,"H1FontColor":"#3d3d3d","H1FontSize":"22px","H1Spacing":"2px","H1UpperCase":1,"H2FontFamily":"'Century Gothic',CenturyGothic,AppleGothic","H2FontVariant":null,"H2FontColor":"#3d3d3d","H2FontSize":"18px","H2Spacing":"1px","H2UpperCase":1,"H3FontFamily":"'Century Gothic',CenturyGothic,AppleGothic","H3FontVariant":null,"H3FontColor":"#3d3d3d","H3FontSize":"14px","H3Spacing":"1px","H3UpperCase":0,"PFontFamily":"'Helvetica Neue',Helvetica,Arial,sans-serif","PFontVariant":null,"PFontColor":"#4f4f4f","PFontSize":"12px","PLineHeight":"30px","PLinkColor":"#0da9d9","PLinkColorHover":"#09a2b0","PSpacing":"1px","PUpperCase":0,"ListFontFamily":"'Century Gothic',CenturyGothic,AppleGothic","ListFontVariant":null,"ListFontColor":"#4f4f4f","ListFontSize":"11px","ListSpacing":"4px","ListUpperCase":1,"ButtonColor":"#4f4f4f","ButtonHoverColor":"#778b91","ButtonTextColor":"#ffffff","SiteWidth":0,"ImageQuality":1,"DznLayoutGuid":30,"DsnLayoutViewFile":"right04","DsnLayoutTitle":"right04","DsnLayoutType":"wide","DsnMobileLayoutGuid":4,"DsnMobileLayoutViewFile":"mobilemenu04","DsnMobileLayoutTitle":"mobilemenu04","FaviconFileNameS3Id":1,"FaviconFileName":"144x144-590415pFSJmeNV.png","FaviconFilePath":"https:\/\/d2f8l4t0zpiyim.cloudfront.net\/000_clients\/590415\/file\/144x144-590415pFSJmeNV.png","ThumbDecorationBorderRadius":"0px","ThumbDecorationBorderWidth":null,"ThumbDecorationBorderColor":"#000000","ThumbDecorationHasShadow":0,"MobileLogoDisplayHeight":"0px","IsFooterActive":0,"FooterContent":"<div class=\"row\" id=\"PYCQYUSWV\">\n<div class=\"column\" id=\"YJONNITDP\">\n<div class=\"block\" id=\"TXLMKKINP\">\n<div style=\"position: relative;\" class=\"text\" contenteditable=\"false\"><p>words<\/p>\n<\/div>\n<span class=\"movehandle\"><\/span><span class=\"confhandle\"><\/span>\n<\/div>\n<\/div>\n<\/div>\n\n","MenuIsInfoBoxActive":0,"MenuInfoBoxText":"","MenuImageFileName":null,"MenuImageFileNameS3Id":null,"MenuImageFilePath":null,"FontCss":"","ShopSettings":{"Guid":"5904159AWExeU1","SiteId":590415,"ShopName":null,"Email":null,"ResponseSubject":null,"ResponseEmail":null,"ReceiptNote":null,"PaymentMethod":null,"InvoiceDueDays":30,"HasStripeUserData":null,"Address":null,"Zip":null,"City":null,"CountryCode":null,"OrgNr":null,"PayPalEmail":null,"Currency":null,"ShippingInfo":null,"ReturnPolicy":null,"TermsConditions":null,"ShippingRegions":[],"TaxRegions":[]},"UserTranslatedText":{"Guid":"590415Nnq0NsDH","SiteId":590415,"Message":"Message","YourName":"Your Name","EnterTheLetters":"Enter The Letters","Send":"Send","ThankYou":"Thank You","Refresh":"Refresh","Follow":"Follow","Comment":"Comment","Share":"Share","CommentOnPage":"Comment On Page","ShareTheSite":"Share The Site","ShareThePage":"Share The Page","AddToCart":"Add To Cart","ItemWasAddedToTheCart":"Item Was Added To The Cart","Item":"Item","YourCart":"Your Cart","YourInfo":"Your Info","Quantity":"Quantity","Product":"Product","ItemInCart":"Item In Cart","BillingAddress":"Billing Address","ShippingAddress":"Shipping Address","OrderSummary":"Order Summary","ProceedToPay":"Proceed To Payment","Payment":"Payment","CardPayTitle":"Credit card information","PaypalPayTitle":"This shop uses paypal to process your payment","InvoicePayTitle":"This shop uses invoice to collect your payment","ProceedToPaypal":"Proceed to paypal to pay","ConfirmInvoice":"Confirm and receive invoice","NameOnCard":"Name on card","APrice":"A Price","Options":"Options","SelectYourCountry":"Select Your Country","Remove":"Remove","NetPrice":"Net Price","Vat":"Vat","ShippingCost":"Shipping Cost","TotalPrice":"Total Price","Name":"Name","Address":"Address","Zip":"Zip","City":"City","State":"State\/Province","Country":"Country","Email":"Email","Phone":"Phone","ShippingInfo":"Shipping Info","Checkout":"Checkout","Organization":"Organization","DescriptionOrder":"Description","InvoiceDate":"Invoice Date","ReceiptDate":"Receipt Date","AmountDue":"Amount Due","AmountPaid":"Amount Paid","ConfirmAndCheckout":"Confirm And Checkout","Back":"Back","Pay":"Pay","ClickToPay":"Click To Pay","AnErrorHasOccurred":"An Error Has Occurred","PleaseContactUs":"Please Contact Us","Receipt":"Receipt","Print":"Print","Date":"Date","OrderNr":"Order Number","PayedWith":"Paid With","Seller":"Seller","HereIsYourReceipt":"Here Is Your Receipt","AcceptTheTerms":"Accept The Terms","Unsubscribe":"Unsubscribe","ViewThisOnline":"View This Online","Price":"Price","SubTotal":"Subtotal","Tax":"Tax","OrderCompleteMessage":"Please download your receipt.","DownloadReceipt":"Download Receipt","ReturnTo":"Return to site","ItemPurchasedFrom":"items was purchased from","SoldOut":"SOLD OUT","ThisPageIsLocked":"This page is locked","Invoice":"Invoice","BillTo":"Bill to:","Ref":"Reference no.","DueDate":"Due date","Notes":"Notes:","CookieMessage":"We are using cookies to give you the best experience on our site. By continuing to use this website you are agreeing to the use of cookies.","CompleteOrder":"Thank you for your order!","Prev":"Previous","Next":"Next","Tags":"Tags","Description":"Description","Educations":"Education","Experiences":"Experience","Awards":"Awards","Exhibitions":"Exhibitions","Skills":"Skills","Interests":"Interests","Languages":"Languages","Contacts":"Contacts","Present":"Present","created_at":"2016-08-28 23:45:34","updated_at":"2016-08-28 23:45:34","SameAs":"Same As"},"GoogleAnalyticsSnippet":"\n  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,'script','https:\/\/www.google-analytics.com\/analytics.js','ga');\n\n  ga('create', 'UA-84337976-1', 'auto');\n  ga('send', 'pageview');\n\n","GoogleAnalyticsObjects":"{\"objType\":\"ga\",\"account\":\"ga('create', 'UA-84337976-1', 'auto');\",\"pages\":[\"ga('send', 'pageview', { page: $locationProvider.path() });\"]}","EnableRightClick":1,"EnableCookie":1,"EnableRSS":null,"SiteBGThumb":null,"ClubType":null,"ClubMemberAtSiteId":null,"ProfileImageFileName":null,"ProfileImageS3Id":null,"CoverImageFileName":null,"CoverImageS3Id":null,"ProfileImageFilePath":null,"CoverImageFilePath":null,"StandardBgImage":null,"NrOfProLikes":15,"NrOfFreeLikes":0,"NrOfLikes":15,"ClientCountryCode":"US","HasRequestedSSLCert":3,"CertNextUpdateDate":1562337047,"IsFlickrWizardComplete":null,"FlickrNsId":null,"SignUpAccountType":null,"created_at":1472420734000},
+        pageJson : {"Guid":"5904151le2n61T","PageTitle":"Welcome","Uri":"welcome","IsStartPage":1,"IsFavorite":0,"IsUnPublished":0,"IsPasswordProtected":0,"SeoDescription":"Ian St. Louis","BlockContent":"<span id=\"VERIFY_5904151le2n61T_HASH\" class=\"DO_NOT_REMOVE_OR_COPY_AND_KEEP_IT_TOP ng-scope\" style=\"display:none;width:0;height:0;position:fixed;top:-10px;z-index:-10\"><\/span>\n\n\n<div class=\"row ng-scope\" id=\"OSXAJRLKW\">\n<div class=\"column ui-resizable-autohide\" id=\"KMLQBKUUO\" style=\"width: 99.7%;\">\n<div class=\"block\" id=\"ENTTSUNDV\">\n<div title=\"Rich Text Editor, editor4\" class=\"text cke_editable_inline cke_contents_ltr\" style=\"position: relative;\" contenteditable=\"false\"><h1 style=\"text-align:justify\"><span style=\"font-size:48px\"><strong>Welcome<\/strong><\/span><\/h1>\n\n<h2><span style=\"font-size:22px\">Ian St. Louis<\/span><\/h2>\n\n<hr>\n<p>&nbsp;<\/p>\n<\/div>\n<span class=\"movehandle\"><\/span><span class=\"confhandle\"><\/span>\n<\/div>\n<\/div>\n<\/div>\n\n\n\n\n\n\n\n\n\n","DescriptionPosition":0,"ListImageMargin":null,"ListImageSize":0,"BgImage":null,"BgImageHeight":0,"BgImageWidth":0,"BgImagePosition":0,"BgImageS3LocationId":0,"PageBGThumb":null,"AddedToClubId":null,"DznTemplateGuid":125,"DsnTemplateType":"cover","DsnTemplateSubGroup":"cover","DsnTemplatePartDirective":null,"DsnTemplateViewFile":"linkentry03","DsnTemplateProperties":[{"type":"main-text-prop","position":"contentPanel"},{"type":"main-image-prop","position":"contentPanel","settings":{"showLink":0,"showBgMode":1}},{"type":"links-prop","position":"contentPanel"}],"DsnTemplateHasPicview":null,"DsnTemplateIsCustom":null,"DsnTemplateCustomTitle":null,"DsnTemplateCustomHtml":"","DsnTemplateCustomCss":"","DsnTemplateCustomJs":"","LinkSettings":{"LinkFontFamily":"'Century Gothic',CenturyGothic,AppleGothic,sans-serif","FontSize":"23px","LinkFontVariant":"","Color":"#38322a","LinkFontCssContent":"","IsUpperCase":0},"MainImage":{"Guid":"590415Kygrt9Xg","PageGuid":"5904151le2n61T","OnepagerSectionGuid":null,"FileName":"590415Kygrt9Xg.jpg","Height":1600,"Width":2560,"BgMode":1,"LinkToPageGuid":"","LinkSectionGuid":null,"Url":null,"S3LocationId":1,"PageMainImageThumb":1,"SectionMainImageThumb":null,"FilePath":"https:\/\/d2f8l4t0zpiyim.cloudfront.net\/000_clients\/590415\/page\/590415Kygrt9Xg.jpg"},"AddedToExpo":0,"LinkHeaders":[{"Guid":"590415ZI4QPYVD","Title":"Ian St. Louis ","LinkPageGuid":"590415Ibh9boem","LinkSectionGuid":null,"Url":null,"FontFamily":"'Didact Gothic', sans-serif","LinkHeaderCssContent":"Didact+Gothic","FontVariant":"regular","FontSize":"73px","FontColor":"#38322a","LetterSpace":"0px","IsUppercase":0,"Idx":0},{"Guid":"590415lYr3h22N","Title":"","LinkPageGuid":"","LinkSectionGuid":null,"Url":null,"FontFamily":"'Open Sans', sans-serif","LinkHeaderCssContent":null,"FontVariant":"regular","FontSize":"11px","FontColor":"#38322a","LetterSpace":"0px","IsUppercase":0,"Idx":1}],"Links":[{"Guid":"590415tA3qb2nU","PageGuid":"590415Ibh9boem","OnepagerSectionGuid":null,"Title":"Projects","Url":"\/projects","Target":"_self","ListOrder":0,"ListPageGuid":"5904151le2n61T","LinkSectionGuid":null,"ParentGuid":""},{"Guid":"590415kzdtAW0C","PageGuid":"5904156jxVVVSF","OnepagerSectionGuid":null,"Title":"Resume","Url":"\/resume","Target":"_self","ListOrder":1,"ListPageGuid":"5904151le2n61T","LinkSectionGuid":null,"ParentGuid":""},{"Guid":"590415U8czbJXi","PageGuid":"590415ps9twNLE","OnepagerSectionGuid":null,"Title":"Extras","Url":"\/extras","Target":"_self","ListOrder":2,"ListPageGuid":"5904151le2n61T","LinkSectionGuid":null,"ParentGuid":""},{"Guid":"590415BAfr5OiY","PageGuid":"590415THrY7Pk9","OnepagerSectionGuid":null,"Title":"About","Url":"\/aboutme","Target":"_self","ListOrder":3,"ListPageGuid":"5904151le2n61T","LinkSectionGuid":null,"ParentGuid":""},{"Guid":"590415gw7pL9sp","PageGuid":"590415JrIsWszd","OnepagerSectionGuid":null,"Title":"Blog","Url":"\/blog","Target":"_self","ListOrder":4,"ListPageGuid":"5904151le2n61T","LinkSectionGuid":null,"ParentGuid":null},{"Guid":"590415twNfVGUk","PageGuid":"590415za5RHhoM","OnepagerSectionGuid":null,"Title":"Contact","Url":"\/contact","Target":"_self","ListOrder":5,"ListPageGuid":"5904151le2n61T","LinkSectionGuid":null,"ParentGuid":""}],"FontCss":"","CreatedAt":"2016-08-31 04:12:57"},
+        menuJson : [{"Guid":"590415kuP0UHZj","SiteId":590415,"PageGuid":"590415Ibh9boem","Title":"Projects","Url":"\/projects","Target":"_self","ListOrder":0,"ParentGuid":null,"created_at":"2016-08-29 00:53:49","updated_at":"2016-08-29 00:57:19","Children":[]},{"Guid":"5904156skoY1Dk","SiteId":590415,"PageGuid":"5904156jxVVVSF","Title":"Resume","Url":"\/resume","Target":"_self","ListOrder":1,"ParentGuid":null,"created_at":"2016-09-08 07:14:59","updated_at":"2016-09-15 06:57:50","Children":[]},{"Guid":"5904153soAAEeb","SiteId":590415,"PageGuid":"590415THrY7Pk9","Title":"About","Url":"\/aboutme","Target":"_self","ListOrder":2,"ParentGuid":null,"created_at":"2016-08-30 19:36:27","updated_at":"2019-05-11 04:14:03","Children":[]},{"Guid":"590415187hANaZ","SiteId":590415,"PageGuid":"590415za5RHhoM","Title":"Contact","Url":"\/contact","Target":"_self","ListOrder":3,"ParentGuid":null,"created_at":"2016-09-30 21:31:27","updated_at":"2019-05-11 04:14:33","Children":[]},{"Guid":"590415EAvEW3I1","SiteId":590415,"PageGuid":"590415JrIsWszd","Title":"Blog","Url":"\/blog","Target":"_self","ListOrder":4,"ParentGuid":null,"created_at":"2019-05-11 04:09:04","updated_at":"2019-05-11 04:24:31","Children":[]},{"Guid":"590415RJjC45n3","SiteId":590415,"PageGuid":"590415ps9twNLE","Title":"Extras","Url":"\/extras","Target":"_self","ListOrder":5,"ParentGuid":null,"created_at":"2018-01-16 21:48:14","updated_at":"2019-05-11 04:14:03","Children":[]},{"Guid":"590415dN2I11yJ","SiteId":590415,"PageGuid":"590415pUnHIC34","Title":"Green Product Development","Url":"about-me-17","Target":"_self","ListOrder":6,"ParentGuid":null,"created_at":"2019-05-14 01:09:24","updated_at":"2019-05-14 01:13:54","Children":[]}],
+        timestamp: 1557789397,
+        resourceVer: 353,
+        frontDictionaryJson: {"common":{"text404":"The page you are looking for does not exist!","noStartPage":"You don't have a start page","noStartPageText1":"Use any page as your start page or create a new page.","noStartPageText2":"How do I use an an existing page as my start page?","noStartPageText3":"- Click on PAGES (In the admin panel to the right)","noStartPageText4":"- Click on the page you want to have as your start page.","noStartPageText5":"- Toggle the Start page switch.","noStartPage2":"This website doesn't have any start page","loginAt":"Login at","toManage":"to manage the website.","toAddContent":"to add content.","noContent1":"Create your first page","noContent11":"Create your first page","noContent111":"Click on New Page","noContent2":"Click on <span>new page<\/span> to add your content to galleries, blogs, e-commerce and much more","noContent":"This website doesn't have any content","onlinePortfolioWebsite":"Online portfolio website","addToCartMessage":"The item has been added to your cart","iaccepthe":"I accept the","termsandconditions":"terms & conditions","andthe":"and the","returnpolicy":"return policy","admin":"Admin","back":"Back","edit":"Edit","appreciate":"Appreciate","portfolioboxLikes":"Portfoliobox Likes","like":"Like","youCanOnlyLikeOnce":"You can only like once","search":"Search","blog":"Blog"},"monthName":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"}}    };
+
+    var allowinfscroll = "true";
+    allowinfscroll = (allowinfscroll == undefined) ? true : (allowinfscroll == 'true') ? true : false;
+
+    var isAdmin = false;
+    var addScroll = false;
+    var expTimer = false;
+
+    $('body').css({
+        visibility: 'visible'
+    });
+
+    pb.initializer.start(serverData,isAdmin,function(){
+        pbAng.App.start();
+    });
+
+    //add for custom JS
+    var tempObj = {};
+</script>
+
+<!--<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>-->
+
+
+                    <script type="application/ld+json">
+                    {
+                        "@context": "https://schema.org/",
+                        "@type": "WebSite",
+                        "url": "https://www.ianstlouis.com/",
+                        "name": "Ian St. Louis",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Ian St. Louis"
+                        },
+                        "description": "Ian St. Louis | Mechanical Engineer at UC Berkeley",
+                        "publisher": "Ian St. Louis"
+                    }
+                    </script>
+                
+                    <script type="application/ld+json">
+                    {
+                        "@context": "https://schema.org/",
+                        "@type": "CreativeWork",
+                        "url": "https://www.ianstlouis.com/"
+                    }
+		            </script>
+                    
+<script src="./Machine Learning_files/api.js" defer=""></script>
+
+
+<return-to-mobile-app><!-- ngIf: returnToMobileApp.isMobileRequested == true --></return-to-mobile-app>
+<public-cookie><!-- ngIf: publicCookie.canAddToCookie == true --><div ng-if="publicCookie.canAddToCookie == true" id="publicCookieUsage" pb-style="{&quot;background-color&quot;:&quot;#fafafa&quot;}" class="ng-scope" style="background-color: rgb(250, 250, 250);"><div pb-style="{&quot;font-size&quot;:&quot;11px&quot;,&quot;color&quot;:&quot;#4f4f4f&quot;,&quot;font-family&quot;:&quot;&#39;Century Gothic&#39;,CenturyGothic,AppleGothic&quot;,&quot;letter-spacing&quot;:&quot;1px&quot;,&quot;text-transform&quot;:&quot;uppercase&quot;,&quot;font-style&quot;:&quot;normal&quot;,&quot;font-weight&quot;:&quot;normal&quot;}" ng-bind-html="site.UserTranslatedText.CookieMessage" class="ng-binding" style="font-size: 11px; color: rgb(79, 79, 79); font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 1px; text-transform: uppercase; font-style: normal; font-weight: normal;">We are using cookies to give you the best experience on our site. By continuing to use this website you are agreeing to the use of cookies.</div><div class="closeCookieMessage" pb-style="{&quot;border-color&quot;:&quot;#4f4f4f&quot;}" ng-click="publicCookie.closeCookieMessage()" style="border-color: rgb(79, 79, 79);"><span pb-style="{&quot;font-size&quot;:&quot;11px&quot;,&quot;color&quot;:&quot;#4f4f4f&quot;,&quot;font-family&quot;:&quot;&#39;Century Gothic&#39;,CenturyGothic,AppleGothic&quot;,&quot;letter-spacing&quot;:&quot;1px&quot;,&quot;text-transform&quot;:&quot;uppercase&quot;,&quot;font-style&quot;:&quot;normal&quot;,&quot;font-weight&quot;:&quot;normal&quot;}" style="font-size: 11px; color: rgb(79, 79, 79); font-family: &quot;Century Gothic&quot;, CenturyGothic, AppleGothic; letter-spacing: 1px; text-transform: uppercase; font-style: normal; font-weight: normal;">OK</span></div></div><!-- end ngIf: publicCookie.canAddToCookie == true --></public-cookie>
+</body></html>
