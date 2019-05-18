@@ -14,7 +14,7 @@ categories = []
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 [image]
   # Caption (optional)
-  caption = "Boundary Classification"
+  caption = "Unutri"
 
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
@@ -22,4 +22,3 @@ categories = []
   
 +++
 # Text
-summary.html

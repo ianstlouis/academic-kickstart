@@ -1,5 +1,5 @@
 +++
-title = "Machine Learning"
+title = "Unutri"
 date = 2019-04-22T16:30:58-07:00
 draft = false
 
@@ -13,7 +13,7 @@ categories = []
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 [image]
   # Caption (optional)
-  caption = "Boundary Classification"
+  caption = "Prototype 1"
 
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight

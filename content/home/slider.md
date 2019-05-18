@@ -25,9 +25,9 @@ height = "300px"
   overlay_filter = 0.15  # Darken the image. Value in range 0-1.
 
   cta_label = "Bio"
-  cta_url = "#about"
-  cta_icon_pack = "fas"
-  cta_icon = "male"
+  # cta_url = "#about"
+  # cta_icon_pack = "fas"
+  # cta_icon = "male"
 
 [[item]]
   title = "Project Highlight"
